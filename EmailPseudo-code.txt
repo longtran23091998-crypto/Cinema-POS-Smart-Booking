@@ -1,0 +1,24 @@
+START
+
+INPUT email
+INPUT password
+
+SET isValid = true
+
+IF length(password) < 8 THEN
+    PRINT "Invalid password"
+    SET isValid = false
+END IF
+
+IF email does not contain "@" OR email does not contain "." THEN
+    PRINT "Invalid email"
+    SET isValid = false
+END IF
+
+IF isValid == true THEN
+    PRINT "Registration accepted"
+ELSE
+    PRINT "Registration rejected"
+END IF
+
+END
