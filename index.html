@@ -43,6 +43,91 @@
             <p>
                 Điền đầy đủ thông tin đội thi để hoàn tất đăng ký.
             </p>
+             <h2>Đăng ký đội thi Hackathon 2026</h2>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Thông tin đội thi</legend>
+
+            <p>
+                <label for="team-name">Tên đội:</label><br>
+                <input type="text" id="team-name" name="teamName" required>
+            </p>
+
+            <p>
+                <label for="leader-email">Email đội trưởng:</label><br>
+                <input type="email" id="leader-email" name="leaderEmail" required>
+            </p>
+
+            <p>
+                <label for="member-count">Số lượng thành viên:</label><br>
+                <input type="number" id="member-count" name="memberCount" min="1" max="5" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Bảng thi đấu</legend>
+
+            <p>
+                <input type="radio" id="web-app" name="competitionTrack" value="web-app" required>
+                <label for="web-app">Web App</label>
+            </p>
+
+            <p>
+                <input type="radio" id="mobile-app" name="competitionTrack" value="mobile-app">
+                <label for="mobile-app">Mobile App</label>
+            </p>
+
+            <p>
+                <input type="radio" id="ai-data" name="competitionTrack" value="ai-data">
+                <label for="ai-data">AI / Data</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Kỹ năng của đội</legend>
+
+            <p>
+                <input type="checkbox" id="frontend" name="skills" value="frontend">
+                <label for="frontend">Frontend</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="backend" name="skills" value="backend">
+                <label for="backend">Backend</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="uiux" name="skills" value="uiux">
+                <label for="uiux">UI/UX</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="database" name="skills" value="database">
+                <label for="database">Database</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="presentation" name="skills" value="presentation">
+                <label for="presentation">Presentation</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ý tưởng dự án</legend>
+
+            <p>
+                <label for="project-idea">Mô tả ngắn về ý tưởng:</label><br>
+                <textarea id="project-idea" name="projectIdea" rows="5" cols="50" required></textarea>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit">Đăng ký tham gia</button>
+            <button type="reset">Làm lại</button>
+        </p>
+    </form>
         </section>
 
     </main>
